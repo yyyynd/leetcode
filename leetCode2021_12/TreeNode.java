@@ -2,7 +2,7 @@ package leetCode2021_12;
 
 import java.util.*;
 
-public class k102 {
+public class TreeNode {
 
     public class TreeNode {
         int val;
