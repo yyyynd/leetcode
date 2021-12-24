@@ -2,9 +2,9 @@ package leetCode2021_12;
 
 import java.util.*;
 
-public class TreeNode {
+public class k {
 
-    public class TreeNode {
+    class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;
