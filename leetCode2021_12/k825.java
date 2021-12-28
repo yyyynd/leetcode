@@ -22,7 +22,7 @@ public class k825 {
         int[] sum = new int[121];
         for(int n : ages)
             count[n]++;
-        for (int i = 1; i < 120; i++)
+        for (int i = 1; i <= 120; i++)
             sum[i] += sum[i - 1] + count[i];
 
         for (int i = 15; i <= 120; i++){
