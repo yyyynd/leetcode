@@ -22,7 +22,7 @@ public class k113 {
     public List<List<Integer>> pathSum(TreeNode root, int targetSum) {
         dfs(new LinkedList<>(), root, 0, targetSum);
         return ans;
-    }
+     }
 
     public void dfs(List<Integer> list, TreeNode root, int sum, int targetSum){
         //空指针，不判断
