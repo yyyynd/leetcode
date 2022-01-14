@@ -46,7 +46,7 @@ public class k99 {
                 }//if
                 preNode = visitNode;
                 cur = visitNode.right;
-            }
+            }//if
         }//while
 
         int tmp = err1.val;
