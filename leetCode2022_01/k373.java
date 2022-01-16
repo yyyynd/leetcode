@@ -2,6 +2,9 @@ package leetCode2022_01;
 
 import java.util.*;
 
+/**
+ * 之前做错的方法其实没有做到每次取出的都是最小对，安顺序选并不能一定选出答
+ */
 public class k373 {
     public static void main(String[] args) {
         System.out.println(new k373().kSmallestPairs(new int[]{1,2},new int[]{3},3));
