@@ -4,6 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+/**
+ *
+ * 这题其实就是为了保障每个结果被选中的概率都是一样的即1/n
+ *
+ * 蓄水池抽样法的优势就在于不需要知道整个样本集合的容量到底是多少
+ * 下述的模拟写法需要预先统计样本数量
+ */
 public class k382 {
     public class ListNode {
         int val;ListNode next;
