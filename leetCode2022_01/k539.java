@@ -22,7 +22,7 @@ public class k539 {
             cnts[h * 60 + m + 1440]++;
         }
         int ans = 1440, last = -10000;
-        for (int i = 0; i <= 1440 * 2; i++) {
+        for (int i = 0; i <= 1440 + 720; i++) {
             if (cnts[i] == 0)
                 continue;
             if (cnts[i] > 1)
