@@ -1,4 +1,4 @@
-package leetCode2021_05_09;
+package leetcode.leetCode2021_05_09;
 
 public class k5 {
     public static void main(String[] args) {
