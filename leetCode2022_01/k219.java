@@ -1,4 +1,4 @@
-package leetCode2022_01;
+package leetcode.leetCode2022_01;
 
 import java.util.*;
 
