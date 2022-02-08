@@ -23,7 +23,8 @@ public class k1219 {
                 if(grid[x][y] == 0)
                     continue;
                 for (int[] dir : dirs){
-                    if(x + dir[0] >= 0 && x + dir[0] < x_limit && y + dir[1] >= 0 && y + dir[1] < y_limit){
+                    if(x + dir[0] >= 0 && x + dir[0] < x_limit &&
+                            y + dir[1] >= 0 && y + dir[1] < y_limit){
                         if(grid[x + dir[0]][y + dir[1]] != 0)
                             count++;
                     }
