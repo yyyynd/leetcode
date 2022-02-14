@@ -12,11 +12,11 @@ public class k540 {
     }
 
     public int find(int left, int right,int[] nums){
+        if(left == right)
+            return nums[left];
+
         int mid = left +  (right - left) / 2;
         //注意范围问题
-        if( ( mid == 0 || nums[mid - 1] != nums[mid] )
-                && ( mid == this.limit || nums[mid + 1] != nums[mid] ) )
-            return nums[mid];
 
         if( mid == 0 || nums[mid - 1] == nums[mid]) {
             if(mid - 1 != 0 && (mid - left) % 2 == 0)
