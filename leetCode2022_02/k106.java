@@ -22,8 +22,10 @@ public class k106 {
     public TreeNode buildTree(int[] inorder, int[] postorder) {
         this.index = postorder.length - 1;
         this.map = new HashMap<>();
+
         for (int i = 0; i < inorder.length; i++)
             map.put(inorder[i], i);
+
         return build(inorder, postorder, 0, postorder.length - 1);
     }
 
