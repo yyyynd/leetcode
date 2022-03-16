@@ -29,7 +29,7 @@ public class k394 {
                 index++;
                 c = s.charAt(index);
             }
-            index++;
+            index++;//过滤[
         }
         //理论上假设我们现在还是在一个方括号内，直到第一个']'才退出当的添加
         while ( index < len ){
@@ -43,7 +43,7 @@ public class k394 {
                 resBuilder.append(s.charAt(index));
             index++;
         }
-        index++;
+        index++; //过滤]
         if(fre == 0)
             fre = 1;
         return resBuilder.toString().repeat(fre);
