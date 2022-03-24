@@ -1,7 +1,7 @@
 package leetcode.leetCode2022_03;
 
 public class k225 {
-    
+
     static class ListNode{
         int val;
         ListNode next;
