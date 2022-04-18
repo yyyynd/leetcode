@@ -11,7 +11,7 @@ public class k40 {
     }
 
     List<List<Integer>> ans = new LinkedList<>();
-    List<Integer> combine = new LinkedList<>();
+    LinkedList<Integer> combine = new LinkedList<>();
     int len;
 
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
@@ -33,13 +33,15 @@ public class k40 {
             return;
         }
 
-        HashSet<Integer> memo = new HashSet<>();
+//        HashSet<Integer> memo = new HashSet<>();
+        int pre = 0;
         for (int i = index; i < this.len; i++){
-            if (! memo.add(candidates[i]))
+            if (pre == candidates[i])
                 continue;
             combine.add(candidates[i]);
             dfs(i + 1, target - candidates[i], candidates);
-            combine.remove(combine.size() - 1);
+            combine.removeLast();
+            pre = candidates[i];
         }
     }
 }
