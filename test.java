@@ -38,21 +38,30 @@ public class test {
 //                distance[j][i] = distance[i][j];
 //            }
 //        }
-        String p = "1\n";
+        String p = "80    24    60    86     8    56    19    11    26    34 \n" +
+                "   85    61    59    76    97    22    90    44    31    14 \n" +
+                "   16    10    58    20    73    71     9    35    23    37 \n" +
+                "   17    93    21    15    52    78    18    74    96    65 \n" +
+                "   25    64     3    55    79    30    41    88     7    91 \n" +
+                "   48     5    62    89    87    69     3    55     0    46 \n" +
+                "   27    92    66    57    50    54    82    33    28    45 \n" +
+                "   42    13    70    99    40     2    47    51    77    95 \n" +
+                "    4    36    32    75    12    94    81    43    49    72 \n" +
+                "   84    29    38    67     1    63    39    53    68    67 \n";
         String[] ps = p.split("\\s+");
         System.out.println(Arrays.toString(ps));
         int[] path = new int[ps.length];
         for (int i = 0; i < path.length; i++)
             path[i] = Integer.parseInt(ps[i]);
-//        int[] set = new int[ps.length + 1];
-//        for (int n : path){
-//            if (set[n] != 0){
-//                System.out.println(n);
-//                System.out.println("error");
-//                break;
-//            }else
-//                set[n] = 1;
-//        }
+        int[] set = new int[ps.length + 1];
+        for (int n : path){
+            if (set[n] != 0){
+                System.out.println(n);
+                System.out.println("error");
+                break;
+            }else
+                set[n] = 1;
+        }
 //        double res = 0;
 //        for (int i = 0; i < n - 1; i++)
 //            res += distance[path[i]][path[i+1]];
