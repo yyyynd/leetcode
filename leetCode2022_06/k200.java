@@ -1,6 +1,10 @@
 package leetcode.leetCode2022_06;
 
 public class k200 {
+    public static void main(String[] args) {
+        String t = "test";
+        System.out.println(t.substring(0,1));
+    }
     public int numIslands(char[][] grid) {
         int ans = 0;
         for (int i = 0; i < grid.length; i++){
